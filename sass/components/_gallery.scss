@@ -1,0 +1,37 @@
+.slider-for{
+    position: absolute;
+    left:-20rem;
+    width: 60%;
+    height:60%;
+    margin: 8rem auto 0rem;
+    & img{
+        
+        width: 40%;
+        min-height: 100%;
+    }
+}
+
+.slider-nav{
+	width: 90%;
+	height: 15rem;
+    margin: auto;
+    @include respond(phone){
+        height: 8rem;
+    }
+    & .item{
+        padding:1rem;
+    }
+    & img{
+        width: 100%;
+        min-height: 18rem;
+
+        @include respond(tab-port){
+            min-height: 15rem;
+        }
+
+        @include respond(phone){
+            min-height: 10rem;
+            width: 110%;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.popup-form{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: $shadow-3;
+    z-index:4444;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+   
+
+    &__content{
+        width: 75%;
+        min-height: 85vh;
+        background-image: linear-gradient(
+                    rgba($color-black,.5),
+                    rgba($color-black,.5)),
+                    url(../img/123.jpg);
+        background-size: cover;
+        box-shadow: 0 2rem 4rem $shadow-2;
+        @include absCenter;
+        border-radius: 10px;
+        display: table;
+        overflow: hidden;
+        text-align: center;
+        padding-top:8rem;     
+        position: relative;
+        @include respond(tab-port){
+            min-height: 85vh;
+        }
+        @include respond(phone){
+            min-height: 100vh;
+        }
+
+       // hiệu ứng load popup ->
+       opacity: 0;
+       transform: translate(-50%,-50%) scale(.5);
+       transition: all .4s .2s;
+
+       
+    }
+
+    // ẩn hiện popup
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content{
+        // hiệu ứng load popup <-
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+    &__close{
+        &:link,
+        &:visited{
+            color:$color-white;
+           position: absolute;
+            top:0rem;
+            right:5rem;
+            text-decoration: none;
+            font-size:5rem;
+            z-index:9200;
+        }
+    }
+}
+
+.form{
+    position: absolute;
+    left:35%;
+    &__group{
+        margin-bottom: 2rem;
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+    @include respond(tab-port){
+        left:30%;
+    }
+    @include respond(phone){
+        left:15%;
+    }
+
+    &__input{
+        font-family:inherit;
+        padding:1.5rem 2rem;
+        font-size: 1.5rem;
+        border-radius: 2px;
+        background-color: $color-white;
+        border:none;
+        border-bottom: 3px solid transparent;
+        width: 150%;
+        display:block;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+
+        @include respond(tab-port){
+          width: 180%;
+        }
+        @include respond(phone){
+            left:15%;
+        }
+
+        &:focus{
+            box-shadow:0 1rem 1rem rgba($color-primary, 0.3);
+            border-bottom: 5px solid $color-green;
+            outline-color: rgba($color-primary, 0.5);
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &::-webkit-input-placeholder{
+            color:$color-grey-dark-2;
+        }
+
+    }
+
+    &__label{
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-top: 1rem !important;
+        margin-left: -12rem !important;
+        display: block;
+        transition: all .3s;
+        color:$color-primary-light
+    }
+
+    &__input:placeholder-shown + &__label{
+        opacity:0;
+        visibility: hidden;
+        transform: translateY(-3rem);
+    }
+}

@@ -1,0 +1,104 @@
+.btn{
+
+    &--white{
+        background-color: $color-white;
+        color:$color-primary;
+
+        &::after{
+            background-color: $color-white;
+        }
+    }
+
+    &--colorline{
+        background-image: linear-gradient(
+            to right,
+            $color-primary-light,
+            $color-primary-dark);
+            color:$color-white;
+
+            &::after{
+                background-image: linear-gradient(
+                    to right,
+                    rgba($color-primary-light,0.6),
+                    rgba($color-primary-dark,0.6));
+            }
+    }
+
+    &--orange{
+        background-color: $color-primary-light;
+        color:$color-white;
+        &::after{
+            background-color: $color-primary-light;
+        }
+    }
+
+    &--small{
+        padding:1rem 3rem !important;
+    }
+    
+    &,
+    &:link,
+    &:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding:15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        backface-visibility: hidden;
+        position: relative;
+    }
+
+    &:hover{
+        transform: translateY(-3px);
+        @include boxshadow-2;
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active{
+        transform: translateY(-1px);
+        @include boxshadow-1;
+    }
+
+    
+
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius:100px;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &--animated{
+        animation: moveinBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.myBtn{
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+    z-index: 99;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    background-color: $color-primary;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 4px;
+
+    &:hover{
+        background-color: #555;
+    }
+}

@@ -1,0 +1,175 @@
+.recommend{
+   
+
+    &__2of3{
+        position: relative;
+        transition: all .4s;
+        cursor: pointer;
+        
+
+        &--photo{
+            width: 100%;
+            border-radius:5px;
+            transition: all .4s;
+            box-shadow: 0 .5rem 1rem rgba($color-black, .1);
+
+            @include respond(tab-port){
+                height:30rem !important;
+            }
+           
+        }
+
+        &--text{
+            @include absCenter;
+            text-align: center;
+            backface-visibility: hidden;
+    
+        }
+        &:hover{
+            transform: translateY(-.7rem);
+        }
+        &:hover &--photo{
+            @include boxshadow-1;
+            transform: scale(1.01);
+
+        }
+    }
+}
+ //STYLE 1 OF 3
+.recommend{
+    &__1of3{ 
+        position: relative;
+        height: 35rem;
+        background: $color-white;
+        border-radius:5px;
+        transition: all .4s;
+        cursor: pointer;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .1);
+        @include respond(tab-port){
+            height: 45rem;
+        }
+
+        &:hover{
+            transform: translateY(-.7rem) scale(1.01);
+            @include boxshadow-1;
+        }
+
+    }
+
+    &-box{  
+        height: 20rem;
+        background-size: cover;
+        background-blend-mode: screen;
+        text-align: center;
+        backface-visibility: hidden;
+        @include respond(tab-port){
+            height:60rem !important;
+        }
+        
+        &__picture{
+            height: 20rem;
+            background-size: cover;
+            background-blend-mode: screen;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            @include respond(tab-port){
+                height: 30rem;
+            }
+
+            
+            &--p1{
+                background-image:linear-gradient(
+                                to right bottom,
+                                rgba($color-primary-light,0.35),
+                                rgba($color-primary-dark,0.35)),
+                                url(../img/rem2.jpg);
+            }
+            &--p2{
+                background-image:linear-gradient(
+                                to right bottom,
+                                rgba($color-primary-light,0.35),
+                                rgba($color-primary-dark,0.35)),
+                                url(../img/rem3.jpg);
+            }
+            &--p3{
+                background-image:linear-gradient(
+                                to right bottom,
+                                rgba($color-primary-light,0.35),
+                                rgba($color-primary-dark,0.35)),
+                                url(../img/rem4.jpg);
+            }
+            &--p4{
+                background-image:linear-gradient(
+                                to right bottom,
+                                rgba($color-primary-light,0.35),
+                                rgba($color-primary-dark,0.35)),
+                                url(../img/rem5.jpg);
+            }
+        }
+
+        &__details{
+            margin: 1rem 0 0 2rem;
+            text-align: left;
+
+            &--title{
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color:$color-grey-dark;
+            }
+
+            &--stars{
+                display: inline-block;
+                font-size: 1.2rem;
+                color:$color-primary;
+                margin-bottom:.5rem;
+
+                & p{
+                    font-size: 1.1rem;
+                    color:$color-grey-light-3;
+                }
+            }
+
+
+            &--price{
+
+                & span{
+                    text-decoration: underline;
+                    margin-right:1rem;
+                }
+                & p.price--org{
+                   font-size: 1.7rem;
+                   color:$color-grey-light-3;
+                   text-decoration: line-through;        
+                }
+            
+                & p.price--dis{
+                   font-size: 1.7rem;
+                   font-weight: bold;
+                   color:$color-grey-dark;
+                   
+                   & i{
+                       padding-left: .5rem;
+                       font-size: 1.6rem;
+                       color:$color-primary;
+                   }
+                   & a.price--checkout{
+                       float: right;
+                       font-size: 1.2rem;
+                       font-weight: normal;
+                       margin:1rem;
+                       color:$color-green;
+                   }
+                   & a.price--antday{
+                       font-size: 1.2rem;
+                       float: right;
+                       font-weight: normal;
+                       margin:1rem;
+                   }
+                   
+               }
+            }
+        }   
+    }
+ 
+}

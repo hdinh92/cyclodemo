@@ -1,0 +1,99 @@
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color:$color-grey-dark;
+}
+
+.heading-primary{
+    text-transform: uppercase;
+    color:$color-white;
+    backface-visibility: hidden;
+    padding-bottom: 5rem;
+
+    &--main{
+        display: block;
+        font-size: 8rem;
+        font-weight: 400;
+        letter-spacing: 4rem;
+        animation: moveinLeft 1s ease-out ;
+        color:$color-white;
+
+        @include respond(phone){ 
+            letter-spacing:2rem;
+            font-size: 5rem;
+        }
+    }
+    &--sub{
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 1.3rem;
+        animation: moveinRight 1s ease-out;
+
+        @include respond(phone){ 
+            letter-spacing: 0.5rem;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(
+        to right,
+        $color-primary-light,
+        $color-primary-dark
+    );
+    display: inline-block;
+    -webkit-background-clip: text;
+    color:transparent;
+    letter-spacing: .3rem;
+    transition: all .2s;
+    backface-visibility: hidden;
+
+    &:hover{
+        transform: skewY(0) skewX(-15deg) scale(1.05);
+        text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+    }
+}
+
+.heading-tertiary{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading-fourth{
+    font-weight: 700;
+    text-transform: uppercase;
+    color:$color-white;
+}
+
+.paragraph{
+    font-size: $default-font-size;
+    margin-bottom:3rem;
+    
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    &--white{
+        color:$color-white;
+    }
+
+    &--colorine{
+        background-image: linear-gradient(
+        90deg,
+        $color-primary-light,
+        $color-primary-dark
+        );
+        -webkit-background-clip: text;
+        color:transparent;
+        font-weight: 300;
+    }
+}
+

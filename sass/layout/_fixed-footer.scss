@@ -1,0 +1,127 @@
+
+.fixed-footer{
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 14rem;
+    z-index: -100;
+    height:11rem;
+    background:$shadow-2;
+    padding:3rem 0 ;
+    color:$color-grey-light-3;
+    line-height: 2rem;
+ 
+
+    &__left{
+        line-height: 2rem;
+        &--icon{
+            padding:0 1rem;
+            font-size: 2.5rem;
+            color:$color-grey-light-3;
+            transition: all .3s;
+           
+
+            &:hover{
+                color:$color-white;
+            }
+        }
+
+        @include respond (tab-port){
+            display: none;
+        }
+    }
+
+    &__right{
+        @include respond (tab-port){
+            position: relative;
+        }
+
+        &--text{
+            font-size: 1.5rem;
+            letter-spacing: .2px;
+            text-align: right;
+            color:$color-white;
+            @include respond (tab-port){
+                position: absolute;
+                left:0;
+                bottom:1rem;
+                text-align:center;
+            }
+            @include respond(tab-land){
+                text-align: center;
+            }
+
+            & p{
+                text-align: center;
+                font-size: 1.2rem;
+                color:$color-grey-light-3;
+                letter-spacing:0;
+                
+            }
+            & span{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            
+        }
+
+
+        &--mail-box{
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+           
+
+            & i{
+                background-image: linear-gradient(
+                    90deg,
+                    $color-primary-dark,
+                    $color-primary-light);
+                    
+
+                color:$color-white !important;
+                width:4rem;
+                line-height: 4rem;
+                color:$shadow-2;;
+                text-align: center;
+                border-top-left-radius: 0.3rem;
+                border-bottom-left-radius: 1rem;
+            }
+
+            & .fxf-tbox, & .fxf-btn{
+                border:none;
+                outline:none;
+            }
+
+            & .fxf-tbox{
+                width: 0;
+                transition: all .5s;
+            //    padding:0 1rem;
+            }
+
+            &:hover > .fxf-tbox, .fxf-tboxfocus{
+                width: 20rem;
+                padding: 0 1rem;
+            }
+
+            & .fxf-btn{
+                
+                border-top-right-radius: 1rem;
+               border-bottom-right-radius: 0.3rem;
+                background-image: linear-gradient(
+                                90deg,
+                                $color-primary-light,
+                                $color-primary-dark);
+                                color:$color-white;
+
+                color:$color-white;
+                font-weight: 700;
+                padding:0 1rem;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            
+        }
+    }
+ 
+}

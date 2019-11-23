@@ -1,0 +1,91 @@
+.space{
+    height: 5rem;
+    width: 100%;
+    background-color: $color-nav;
+}
+
+.search-box{
+    position: absolute;
+    right:21rem;
+    top:1rem;
+    background: $color-grey-dark-2;
+    height: 3rem;
+    border-radius: 4rem;
+}
+
+.search-box:hover > .search-txt{
+    width: 24rem;
+    padding:0 2rem;
+    @include respond(phone){
+        width: 10rem !important;
+    }
+}
+
+.search-box:hover > .search-btn{
+    background:$color-white;
+}
+
+.search-btn{
+    color: $color-primary;
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background:$color-grey-dark-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s;
+
+}
+
+.search-txt{
+    border: none;
+    background:none;
+    outline:none;
+    float: left;
+    color: $color-white;
+    transition: .4s;
+    line-height: 3rem;
+    width: 0;
+    
+}
+
+.search-icon{
+    position: absolute;
+    right:2rem;
+    top:1rem;
+
+    &--btn{
+        display: inline-flex;
+        width: 3rem;
+        height: 3rem;
+        text-decoration: none;
+        background: $color-grey-dark-2;
+        border-radius: 50%;
+        color:$color-primary;
+        justify-content: center;
+        align-items: center;
+        margin: 0 6px;
+        transition: all .2s;
+        
+        @include respond(tab-port){
+            margin-left:3px;
+        }
+
+        &:hover{
+            background:$color-white;
+        }
+
+        &:hover i{
+            transition: all .4s;
+        }
+
+        &:hover > i{
+            transform:  scale(1.6) rotate(10deg);
+        }
+    }
+
+}

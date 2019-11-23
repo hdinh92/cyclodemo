@@ -1,0 +1,42 @@
+.counter{
+    position: relative;
+    height: 20vh;
+    //margin-bottom:10rem;
+
+    &__section{
+        position: absolute;
+        top:50%;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+    
+    &__position{
+        padding:4rem 0;
+        width: 100%;
+        background: linear-gradient(
+            90deg,
+            $color-primary-light,
+            $color-primary-dark
+        );
+        color:$color-white;
+    }
+
+    &__item{
+        flex:1;
+        text-align: center;
+        padding-top: 2rem;
+        color:$color-white;
+        text-transform: uppercase;
+
+        & i{
+            font-size: 4rem;
+            color:$color-grey-light-1;
+        }
+
+        &--num{
+            font-size: 3rem;
+            //margin: 2rem 0;
+        }
+    }
+}
+

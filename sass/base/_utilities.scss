@@ -1,0 +1,19 @@
+.u-margin-bottom-small{margin-bottom:3rem};
+.u-margin-bottom-medium{
+    margin-bottom:5rem;
+    @include respond(tab-port){
+        margin-bottom: 2rem !important;
+    }
+};
+.u-margin-bottom-large{margin-bottom:8rem};
+.u-margin-bottom-huge{margin-bottom:12rem};
+
+
+
+
+.u-margin-top-small {margin-top:3rem};
+.u-margin-top-medium {margin-top:5rem};
+.u-margin-top-large{margin-top:8rem};
+.u-margin-top-huge{margin-top:12rem};
+
+.u-center-text{text-align: center};

@@ -1,0 +1,16 @@
+.header{
+   // z-index: 10;
+    position: relative;
+    height: 85vh !important;
+    background-image:linear-gradient(
+    to right bottom,
+    rgba($color-primary-light,0.25),
+    rgba($color-primary-dark,0.25));
+    
+
+    &__text-box{
+        @include absCenter;
+        top:40%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="shortcut icon" type="imatge/png" href="img/icon-w.png">
+    <title>Cyclo | Around the World</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <div class="space" id="space">
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to seach">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div class="search-icon">
+            <a href="#" class="search-icon--btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="search-icon--btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="search-icon--btn"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="search-icon--btn"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navbar__logo">
+            <img src="img/icon-nav.jpg" id="navbar__logo-lg">
+        </div>
+        <nav class="navbar__nav">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#section-about" class="navbar__link">About Us</a></li>
+                <li class="navbar__item"><a href="#section-tours" class="navbar__link">Our tours</a></li>
+                <li class="navbar__item"><a href="#section-recommend" class="navbar__link">Special Offers</a></li>
+                <li class="navbar__item"><a href="#section-videoreview" class="navbar__link">Gallery</a></li> 
+                <li class="navbar__item"><a href="#popup-form" class="navbar__link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--end NAVBAR-->
+
+    <!--HEADER-->
+    <header class="header" id="header">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="img/Over-the-Map.mp4" type="video/mp4">
+                Your browser is not supported!
+            </video>
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Cyclo</span>
+                <span class="heading-primary--sub">Enjoy your journey</span>
+            </h1>
+
+            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        </div>
+
+    </header>
+    <!--end HEADER-->
+    <main>
+        <!-- test navigation -->
+        <div class="" id="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="" id="nav-btn">
+                <!--nav icon--> <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="" id="nav-bg">
+                &nbsp;
+            </div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a onclick="do_something()" href="#section-about"
+                            class="navigation__link" id="navigation__link"><span>01. </span>About Us</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link" id="navigation__link"><span>02.
+                            </span>Your benefits</a>
+                    </li>
+                    <li class="navigation__item"><a href="" class="navigation__link" id="navigation__link"><span>03.
+                            </span>Popular tours</a>
+                    </li>
+                    <li class="navigation__item"><a href="" class="navigation__link" id="navigation__link"><span>04.
+                            </span>Stories</a></li>
+                    <li class="navigation__item"><a href="" class="navigation__link" id="navigation__link"><span>05.
+                            </span>Book now</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!--end navigation -->
+
+        <section class="section-about" id="section-about">
+            <div class="u-center-text  u-margin-bottom-medium">
+                <h2 class="heading-secondary">Vietnam’s Cyclos</h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">In the past</h3>
+                    <p class="paragraph">
+                        The cyclo is a three-wheel bicycle taxi that appeared in Vietnam during the French colonial
+                        period after a failed attempt to introduce rickshaws. A double seat (for Vietnamese – an
+                        average
+                        foreigner would find riding with a companion a bit of a squeeze) is supported by the two
+                        front
+                        wheels, with the driver sitting behind. The design in Ho Chi Minh City differs from the
+                        Hanoi
+                        variety in that the driver sits much higher (as do the prices!).
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Cyclo</h3>
+                    <p class="paragraph">
+                        Cyclos once dominated the streets in Vietnam, but now they’re all clustered around touristy
+                        areas, filled with foreigners in big tour groups. From near ubiquity to the edge of
+                        extinction,
+                        here’s the fascinating history of the cyclo in Vietnam.
+                    </p>
+
+                    <a href="" class="btn btn--colorline btn--small">Read more!</a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="img/com-1.jpg" alt="Photo 1" class="composition__photo composition__photo--1">
+                        <img src="img/com-2.jpg" alt="Photo 2" class="composition__photo composition__photo--2">
+                        <img src="img/com-3.jpg" alt="Photo 3" class="composition__photo composition__photo--3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Section about-->
+
+        <section class="section-features">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon  fas fa-globe"></i>
+                        <h3 class="heading-tertiary">EXPLORE THE city</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae veritatis ex suscipit,
+                            dignissimos beatae iusto.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon fa fa-users" aria-hidden="true"></i>
+                        <h3 class="heading-tertiary">Meet a people</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae veritatis ex suscipit,
+                            dignissimos beatae iusto.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon fa fa-heart-o "></i>
+                        <h3 class="heading-tertiary">Friendly</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae veritatis ex suscipit,
+                            dignissimos beatae iusto.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <i class="feature-box__icon fab fa-opencart"></i>
+                        <h3 class="heading-tertiary">No shopping tour</h3>
+                        <p class="feature-box__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae veritatis ex suscipit,
+                            dignissimos beatae iusto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End section feature-->
+
+        <section class="section-tours" id="section-tours">
+            <div class="u-center-text u-margin-bottom-medium">
+                <h2 class="heading-secondary">Most popular tour</h2>
+            </div>
+            <div class="row section-tours__row">
+                <!--START-->
+                <!-- item-->
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <!--FRONT-->
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--p1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <div class="card__heading-span card__heading-span--1">See Ho Chi Minh City on a Classic
+                                    Cyclo Tour</div>
+                            </h4>
+
+                            <div class="card__details">
+                                <ul>
+                                    <li>Starting time: 8.00 AM</li>
+                                    <li>Duration: 4-5 hours</li>
+                                    <li>Up to 20 people</li>
+                                    <li>2 tour guides</li>
+                                    <li>Language: English</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end front-->
+
+                        <!--CARD BACK-->
+                        <div class="card__side card__side--back card__side--back-c1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">$39</p>
+                                </div>
+                                <a href="#" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End 1 item-->
+
+                <!-- item-->
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <!--FRONT-->
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--p2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <div class="card__heading-span card__heading-span--1">Hidden Ha Noi Morning Tour Classic
+                                    Cyclo Tour</div>
+                            </h4>
+
+                            <div class="card__details">
+                                <ul>
+                                    <li>Starting time: 8.00 AM</li>
+                                    <li>Duration: 4-5 hours</li>
+                                    <li>Up to 30 people</li>
+                                    <li>3 tour guides</li>
+                                    <li>Language: English</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end front-->
+
+                        <!--CARD BACK-->
+                        <div class="card__side card__side--back card__side--back-c1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">$49</p>
+                                </div>
+                                <a href="#" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End 1 item-->
+                <!-- item-->
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <!--FRONT-->
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--p3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <div class="card__heading-span card__heading-span--1">Hoi An Street Food<br> Walking
+                                    Tour</div>
+                            </h4>
+
+                            <div class="card__details">
+                                <ul>
+                                    <li>Starting time: 8.00 AM</li>
+                                    <li>Duration: 6-8 hours</li>
+                                    <li>Up to 4 people</li>
+                                    <li>4 tour guides</li>
+                                    <li>Language: English</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end front-->
+
+                        <!--CARD BACK-->
+                        <div class="card__side card__side--back card__side--back-c1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Only</p>
+                                    <p class="card__price-value">$59</p>
+                                </div>
+                                <a href="#" class="btn btn--white">Book now!</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End 1 item-->
+            </div>
+
+            <div class="u-center-text">
+                <a href="#section-services" class="btn btn--colorline">Discover all tours</a>
+            </div>
+        </section>
+        <!--END SECTION TOUR-->
+
+        <div class="counter u-margin-bottom-small">
+            <section class="counter__section">
+                <div class="counter__position">
+                    <div class="inner-width__counter">
+
+                        <div class="counter__item">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <div class="counter__item--num">12345</div>
+                            Customers
+                        </div>
+
+                        <div class="counter__item">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                            <div class="counter__item--num">1200</div>
+                            Tours
+                        </div>
+
+                        <div class="counter__item">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <div class="counter__item--num">60</div>
+                            Place
+                        </div>
+
+                        <div class="counter__item">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            <div class="counter__item--num">8000</div>
+                            Rating
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--END COUNTER-->
+
+        <!-- <section class="section-services" id="section-services">
+            <div class="inner-width__service">
+                <div class="u-center-text u-margin-top-medium">
+                    <h2 class="heading-secondary">Our Tour</h2>
+                </div>
+
+                <div class="border"></div>
+                <div class="services__container u-margin-bottom-medium">
+                    <div class="service__box">
+                        <div class="service__box--icon">
+                            <i class="fa fa-university" aria-hidden="true"></i>
+                        </div>
+                        <div class="service__box--title">City & Cyclo Private Day Tour</div>
+                        <div class="service__box--desc">
+                            Visit important historical landmarks: Japanese Bridge, ancient Chinese Temple, merchant's
+                            house and more. Relax on boat cruise to Cua Dai estuary.
+                        </div>
+                    </div>
+
+                    <div class="service__box">
+                        <div class="service__box--icon">
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        </div>
+                        <div class="service__box--title">Hanoi Street Food Walking Tour</div>
+                        <div class="service__box--desc">
+                            Explore the city of Hanoi on foot and discover delicious and mouth watering street food!
+                        </div>
+                    </div>
+
+                    <div class="service__box">
+                        <div class="service__box--icon">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                        </div>
+                        <div class="service__box--title">Cyclos & Markets</div>
+                        <div class="service__box--desc">
+                            Visit Ho Chi Minh's classic attractions: from the the Tan Dinh Church, General Post Office
+                            and Reunification Palace
+                        </div>
+                    </div>
+
+                    <div class="service__box">
+                        <div class="service__box--icon">
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        </div>
+                        <div class="service__box--title">Cyclo Ride with Lunch or Dinner</div>
+                        <div class="service__box--desc">
+                            Get a chance to taste delicious and filling traditional Vietnamese lunch or dinner right
+                            after the entire trip
+                        </div>
+                    </div>
+
+                    <div class="service__box">
+                        <div class="service__box--icon">
+                            <i class="fa fa-sun-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="service__box--title">Hidden Hoi An Morning Tour</div>
+                        <div class="service__box--desc">
+                            Explore the unique and less touristy, charming streets of Hanoi on foot for a closer look at
+                            the local culture
+                        </div>
+                    </div>
+
+                    <div class="service__box">
+                        <div class="service__box--icon">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="service__box--title">Private Nha Trang Cyclo Tour</div>
+                        <div class="service__box--desc">
+                            Take a moment to slow down and go on a relaxing cyclo ride around Nha Trang
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text">
+                    <a href="#" class="btn btn--orange btn--small">Book now</a>
+                </div>
+
+            </div>
+        </section> -->
+        <!--END SERVICE-->
+
+        <section class="section-recommend" id="section-recommend">
+            <div class="u-center-text u-margin-bottom-medium">
+                <h2 class="heading-secondary">TRAVEL INSPIRATION</h2>
+                <div class="paragraph--colorine">Curated suggestions based on seasons, festivals and interests</div>
+            </div>
+
+            <div class="row section-recommend__row">
+                <div class="col-2-of-3">
+                    <div class="recommend__2of3">
+                        <img src="img/rem1.jpg" class="recommend__2of3--photo">
+                        <div class="recommend__2of3--text">
+                            <h3 class="heading-fourth"> Hoi An City and Countryside Tour </h3>
+                            <p class="paragraph--white">Explore the finest attractions and immerse
+                                yourself in the rich cultural beauty of Hoi An!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="recommend__1of3">
+                        <div class="recommend-box">
+                            <div class="recommend-box__picture recommend-box__picture--p1">
+                                &nbsp;
+                            </div>
+                            <div class="recommend-box__details">
+                                <div class="recommend-box__details--title"> Ho Chi Minh Discovery Tour</div>
+                                <div class="recommend-box__details--stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    &nbsp;&nbsp;4.3
+                                    <p>(27 Reviews) | 574 Booked</p>
+                                </div>
+                                <div class="recommend-box__details--price">
+                                    <p class="price--org"><span>đ</span>1,322,528</p>
+                                    <p class="price--dis"><span>đ</span>1,160,113<i class="fas fa-bolt"></i> <a
+                                            class="price--checkout">Available Tomorrow</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end 1 item 1of3-->
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="recommend__1of3">
+                        <div class="recommend-box">
+                            <div class="recommend-box__picture recommend-box__picture--p2">
+                                &nbsp;
+                            </div>
+                            <div class="recommend-box__details">
+                                <div class="recommend-box__details--title">Hoi An City and Countryside Tour</div>
+                                <div class="recommend-box__details--stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    &nbsp;&nbsp;4.6
+                                    <p>(50 Reviews) | 609 Booked</p>
+                                </div>
+                                <div class="recommend-box__details--price">
+                                    <p class="price--org"><span>đ</span>324,832</p>
+                                    <p class="price--dis"><span>đ</span>301,629<i class="fas fa-bolt"></i> <a
+                                            class="price--checkout">Available Tomorrow</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end 1 item 1of3-->
+
+                <div class="col-1-of-3">
+                    <div class="recommend__1of3">
+                        <div class="recommend-box">
+                            <div class="recommend-box__picture recommend-box__picture--p3">
+                                &nbsp;
+                            </div>
+                            <div class="recommend-box__details">
+                                <div class="recommend-box__details--title">Hoi An Street Food Tour on Cyclo</div>
+                                <div class="recommend-box__details--stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    &nbsp;&nbsp;5.0
+                                    <p>(3 Reviews) | 165 Booked</p>
+                                </div>
+                                <div class="recommend-box__details--price">
+                                    <p class="price--org"><span></span></p>
+                                    <p class="price--dis"><span>đ</span>997,697 <a class="price--antday">Available from
+                                            2 Aug 2019</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end 1 item 1of3-->
+
+                <div class="col-1-of-3">
+                    <div class="recommend__1of3">
+                        <div class="recommend-box">
+                            <div class="recommend-box__picture recommend-box__picture--p4">
+                                &nbsp;
+                            </div>
+                            <div class="recommend-box__details">
+                                <div class="recommend-box__details--title"> The early morning in Hanoi</div>
+                                <div class="recommend-box__details--stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    &nbsp;&nbsp;4.0
+                                    <p>(7 Reviews) | 206 Booked</p>
+                                </div>
+                                <div class="recommend-box__details--price">
+                                    <p class="price--org"><span>đ</span>533,652</p>
+                                    <p class="price--dis"><span>đ</span>696,068<i class="fas fa-bolt"></i> <a
+                                            class="price--antday">Available from 3 Aug 2019</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end 1 item 1of3-->
+            </div>
+        </section>
+        <!--END RECOMMEND-->
+
+        <section class="section-videoreview" id="section-videoreview">
+            <div class="video-rev">
+                <h3 class="video-rev__heading">get ready</h3>
+                <p class="video-rev__paragraph">Book your next adventure</p>
+                <a href="#video-popup" class="video-rev__icon">
+                    <i class="far fa-play-circle"></i>
+                </a>
+            </div>
+
+            <div class="video-popup" id="video-popup" onclick=visible()>
+                <div class="video-popup__content">
+                    <a href="#section-videoreview" class="video-popup__close">&times;</a>
+                    <iframe id="existing-iframe-example" onclick="onClick(this)"
+                        src="https://www.youtube.com/embed/01y1_y7c5_w?autoplay=1&mute=1&controls=0&rel=0&loop=1"
+                        allow="autoplay" frameborder="0">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+        <!--END videoreview-->
+
+
+
+        <section class="section-gallery">
+            <div class="slider-nav">
+                <div class="item">
+                    <img src="img/gal1.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal2.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal3.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal4.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal5.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal6.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal7.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal8.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal9.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal10.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal11.png" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal12.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal13.jpeg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal4.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal15.jpg" alt="image" draggable="false" />
+                </div>
+                <div class="item">
+                    <img src="img/gal16.jpg" alt="image" draggable="false" />
+                </div>
+            </div>
+
+            <div class="slider-for">
+            </div>
+
+        </section>
+        <!--END gallery-->
+
+        <section class="section-testimonials ">
+            <div class="u-center-text u-margin-bottom-medium">
+                <h2 class="heading-secondary">what our customers are saying about us</h2>
+            </div>
+            <div class="testimonial">
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <blockquote>
+                            <p> I first went on a private Mekong day tour with CYtour and lived that we went off the
+                                tourist
+                                trail. It was personalised,
+                                fascinating and a truly amazing experience. Tour guide's English and knowledge are
+                                brilliant
+                                and she is a beautiful person.
+                            </p>
+                            <cite><img src="img/customer-1.jpg"> Diana Cormie</cite>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-1-of-3">
+                        <blockquote>
+                            <p>It would not be possible to say how great this tour was. We have been in Vietnam for a
+                                week
+                                and CYTour of XichLo was by far the best,
+                                most knowledgable and most courteous tour guide.&nbsp;Many tours do a good job.
+                            </p>
+                            <cite><img src="img/customer-2.jpg"> Jeremy</cite>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-1-of-3">
+                        <blockquote>
+                            <p> The food was abundant and delicious, our guides friendly and knowledgeable, and the ride
+                                through the city on the back of their motorbikes so much fun.
+                                The foods we tasted were delicious and unique. We love it so much!
+                            </p>
+                            <cite><img src="img/customer-3.jpg"> Alpine Celeste</cite>
+                        </blockquote>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--END testimonials-->
+
+
+
+    </main>
+    <!--FIXED footer-->
+    <div class="fixed-footer" id="fixed-footer">
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="fixed-footer__left">
+                    <a href="#" class="fixed-footer__left--icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="fixed-footer__left--icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="fixed-footer__left--icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+            <div class="col-3-of-4">
+                <div class="row fixed-footer__right">
+                    <div class="col-2-of-4 fixed-footer__right--text">
+                        Travel discounts up to 60% off sent straight to your inbox
+                        <p>By clicking Subscribe, you have agreed to our<span> Terms & Conditions</span> and
+                            <span>Privacy Policy</span> </p>
+                    </div>
+
+
+                    <div class="col-2-of-4 fixed-footer__right--mail-box">
+                        <i class="fas fa-envelope"></i>
+                        <input class="fxf-tbox" type="email" name="" vaule="" placeholder="Enter your email">
+                        <button class="fxf-btn" type="button" name="button">Subscribe</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- endFIXED footer-->
+
+    <footer class="footer">
+
+        <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">Top</button>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="footer__left">
+                    <img src="img/icon-w.png">
+                    <p>&reg; 2019</p>
+                    <p>Design by N.H.D</p>
+                    <p>All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="col-2-of-4 footer__navigation">
+                <div class="col-1-of-2">
+                    <h3 class="footer__title">ABOUT CYTour</h3>
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">CYTour Blog</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Partner with us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-1-of-2">
+                    <h3 class="footer__title">TERMS OF USE</h3>
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#" class="footer__link">Terms And Conditions</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="footer__right">
+                    <div class="footer__right--icon">
+                        <button class="footer-btn" type="button" name="button">Ask to CYTour</button>
+                    </div>
+                    <div class="footer__right--payment">
+                        <img src="img/pay1.png">
+                        <img src="img/pay2.png">
+                        <img src="img/pay3.png">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup-form" id="popup-form">
+        <div class="popup-form__content">
+             <a href="#" class="popup-form__close">&times;</a>
+            <form action="#" class="form">
+                <div class="form__group">
+                    <input type="text" class="form__input" id="name" placeholder="Full name" required>
+                    <label class="form__label" for="name">Full name</label>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" id="email" placeholder="Email address" required>
+                    <label class="form__label" for="email">Email</label>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input" id="subject" placeholder="Subject" required>
+                    <label class="form__label" for="subject">Subject</label>
+                </div>
+                <div class="form__group">
+                    <textarea type="text" class="form__input" id="messenger" placeholder="Messenger"
+                        required></textarea>
+                    <label class="form__label" for="messenger">Messenger</label>
+                </div>
+                <div class="form__group form__group--btn ">
+                    <button class="btn btn--white">Submit &rarr;</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="js/jquery.waypoints.js"></script>
+<script src="js/7295ff8ca6.js"></script>
+<script src="slick/slick.js"></script>
+<script>
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+<script src="js/style.js"></script>
+<script>
+
+    window.onscroll = function () {
+        scrollFunction();
+        scrollFixedFooter();
+        scrollNav();
+
+    }
+
+</script>
+<!-- <script>
+    window.onscroll = () => { scrollFunction() };
+    window.onscroll = () => { scrollFixedFooter() };
+
+    var a = ($("body").height());
+    var b = ($("main").height());
+    var c = ($("footer").height());
+    var f = ($(".fixed-footer").height());
+    var g = c + f;
+    var d = a - b;
+    console.log(c);
+    console.log(f);
+    console.log(g);
+</script> -->
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        $('.counter__item--num').counterUp({
+            delay: 1,
+            time: 100
+        });
+    });
+</script>
+
+<script>
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        autoplay: true
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        centerMode: true,
+
+    });
+</script>
+
+</html>
